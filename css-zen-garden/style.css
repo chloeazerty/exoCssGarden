@@ -1,0 +1,228 @@
+
+
+/* --------------------------------------------------
+---------------- FONTS & TEXTS ----------------------
+----------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    font-family:'Roboto';
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family:'Montserrat';
+    font-weight:bold;
+}
+h1{
+    font-size:3rem;
+    margin-bottom:1rem; /* equivalent à 16px */
+    color:antiquewhite;
+}
+h2{
+    font-size:2rem;
+    font-weight: bold;
+    margin-bottom:1rem; /* equivalent à 16px */
+    color: aliceblue;
+}
+h3{
+    font-size:1.2rem;
+    font-weight: bold;
+    margin-bottom:1rem; /* equivalent à 16px */
+    margin-top: 10px;
+    color:indianred;
+}
+p,
+ul,
+ol,
+li,
+a,
+blockquote,
+figcaption,
+span
+table,
+tr,
+td,
+article,
+details,
+section,
+main,
+abbr{
+    font-family:"Roboto";
+    font-weight:400 /* REGULAR */
+}
+p{
+    font-size: 1rem;
+    line-height:1.3rem;
+    color:mistyrose;
+}
+/*debut */
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/*fin*/
+
+/* STRUCTURE ET POSITIONNEMENTS */
+
+.container{
+    max-width:1400px;
+    margin:0 auto;
+}
+.row{
+    display:flex;
+}
+
+
+/* puis viennent les colonnes */
+.w-25{
+    width: 25%;
+}
+.w-33{
+    width:33.333333%
+}
+.w-50{
+    width:50%;
+}
+.w-66{
+    width:66.666666%;
+}
+.w-75{
+    width:75%;
+}
+.w-100{
+    width:100%;
+}
+
+
+
+.bord-arrondi{
+    border-radius:10px
+}
+
+
+/* Helpers */
+.text-center{
+    text-align:center;
+}
+.text-right{
+    text-align:right;
+}
+
+.roboto{
+    font-family: 'Roboto';
+}
+
+.bg-blue{
+    background-color:#2424ad;
+}
+
+
+/*MON CSS*/
+#css-zen-garden{
+    max-width:1400px;
+    margin:0 auto;
+}
+
+h1{
+    text-align: center;
+    font-size:100px;
+}
+
+h2{
+    text-align: center;
+}
+
+.intro{
+    display:flex;
+    background-image: url('../img/glitter.jpeg');
+    background-size: cover;
+    background-position: center center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: stretch;
+
+}
+
+
+a{
+    text-decoration:none;
+    color:aquamarine;
+}
+
+.summary{
+    height:40px;
+    padding-left: 30px;
+    text-align: justify;
+}
+
+#zen-supporting{
+   background-image: url('../img/ampoule.jpeg');
+   text-align: justify;
+   margin-right: 350px;
+   background-repeat: no-repeat;
+   margin-top: 15px;
+   padding-left: 15px;
+   padding-right: 15px;
+   width: 900px;
+   height: 0px;
+}
+
+#zen-preamble{
+    padding-left: 20px;
+    text-align: justify;
+    padding-right: 20px;
+}
+
+.sidebar{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #00788F;
+    margin-left: 1050px;
+    padding-right: 30px;
+    padding-bottom: 12px;
+    margin-top: 200px;
+}
+
+/*#zen-supporting, .sidebar{
+    display: flex;
+    flex-wrap: wrap;
+}*/
+
+footer{
+    background-color: black;
+    opacity: 0.4;
+    display: flex;
+    justify-content: space-between;
+    height: 103px;
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+a{
+    padding-right:10px;
+}
+
